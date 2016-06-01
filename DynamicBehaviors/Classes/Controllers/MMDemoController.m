@@ -36,25 +36,25 @@
     MMBaseView *baseView;
     
     // 1.2 判断,并设置值
-    switch (self.idx) {
-        case 0:
+    switch (self.funcId) {
+        case kDemoFuncSnap:
             // 多态!
             baseView = [[MMSnapView alloc] initWithFrame:self.view.bounds];
             break;
-        case 1:
+        case kDemoFuncPush:
             baseView = [[MMPushView alloc] initWithFrame:self.view.bounds];
             break;
-        case 2:
+        case kDemoFuncAttachment:
             baseView = [[MMAttachmentView alloc] initWithFrame:self.view.bounds];
             
             break;
-        case 3:
+        case kDemoFuncSpring:
             baseView = [[MMSpringView alloc] initWithFrame:self.view.bounds];
             
             break;
-        case 4:
+        case kDemoFuncCollision:
             baseView = [[MMCollisionView alloc] initWithFrame:self.view.bounds];
-            
+
             break;
             
         default:

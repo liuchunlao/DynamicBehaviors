@@ -50,7 +50,8 @@
     demoVc.navigationItem.title = _behaviorsArr[indexPath.row];
     
     // 2.2 传递内容进行判断! -> 索引 indexPath.row!
-    demoVc.idx = (int)indexPath.row;
+//    demoVc.idx = (int)indexPath.row;
+    demoVc.funcId = (int)indexPath.row;
     
     // 3.跳转
     [self.navigationController pushViewController:demoVc animated:YES];

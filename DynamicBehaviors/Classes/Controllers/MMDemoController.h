@@ -8,11 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+// MARK: - 1.定义枚举
+typedef enum {
+
+    kDemoFuncSnap,
+    kDemoFuncPush,
+    kDemoFuncAttachment,
+    kDemoFuncSpring,
+    kDemoFuncCollision
+
+} kDemoFunc;
+
 @interface MMDemoController : UIViewController
 
 /**
  *  功能代号
  */
-@property (nonatomic, assign) int idx;
+//@property (nonatomic, assign) int idx;
+
+@property (nonatomic, assign) kDemoFunc funcId;
 
 @end
