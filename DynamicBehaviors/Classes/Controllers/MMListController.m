@@ -7,6 +7,7 @@
 //
 
 #import "MMListController.h"
+#import "MMDemoController.h"
 
 @interface MMListController () {
     // 下划线的成员变量!
@@ -37,6 +38,19 @@
     
     // 3.不显示多余的行
     self.tableView.tableFooterView = [[UIView alloc] init];
+}
+
+#pragma mark - 代理方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    // 1.创建demoVc对象
+    MMDemoController *demoVc = [[MMDemoController alloc] init];
+    
+    // 2.设置标题
+    demoVc.navigationItem.title = _behaviorsArr[indexPath.row];
+    
+    // 3.跳转
+    [self.navigationController pushViewController:demoVc animated:YES];
 }
 
 

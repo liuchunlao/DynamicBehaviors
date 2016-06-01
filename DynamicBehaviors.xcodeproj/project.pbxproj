@@ -12,6 +12,7 @@
 		18072B8F1CFE7F6D0061EA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18072B8D1CFE7F6D0061EA10 /* LaunchScreen.storyboard */; };
 		18072B9D1CFE7FCC0061EA10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072B9B1CFE7FCC0061EA10 /* AppDelegate.m */; };
 		18072BA01CFE7FEF0061EA10 /* MMListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072B9F1CFE7FEF0061EA10 /* MMListController.m */; };
+		18072BA31CFE889E0061EA10 /* MMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BA21CFE889E0061EA10 /* MMDemoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		18072B9B1CFE7FCC0061EA10 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18072B9E1CFE7FEF0061EA10 /* MMListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMListController.h; sourceTree = "<group>"; };
 		18072B9F1CFE7FEF0061EA10 /* MMListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMListController.m; sourceTree = "<group>"; };
+		18072BA11CFE889E0061EA10 /* MMDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDemoController.h; sourceTree = "<group>"; };
+		18072BA21CFE889E0061EA10 /* MMDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDemoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 			children = (
 				18072B9E1CFE7FEF0061EA10 /* MMListController.h */,
 				18072B9F1CFE7FEF0061EA10 /* MMListController.m */,
+				18072BA11CFE889E0061EA10 /* MMDemoController.h */,
+				18072BA21CFE889E0061EA10 /* MMDemoController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18072BA31CFE889E0061EA10 /* MMDemoController.m in Sources */,
 				18072BA01CFE7FEF0061EA10 /* MMListController.m in Sources */,
 				18072B811CFE7F6D0061EA10 /* main.m in Sources */,
 				18072B9D1CFE7FCC0061EA10 /* AppDelegate.m in Sources */,
