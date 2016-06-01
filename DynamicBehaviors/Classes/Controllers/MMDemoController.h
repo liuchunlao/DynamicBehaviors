@@ -10,4 +10,9 @@
 
 @interface MMDemoController : UIViewController
 
+/**
+ *  功能代号
+ */
+@property (nonatomic, assign) int idx;
+
 @end
