@@ -33,10 +33,6 @@
  block   -> copy
  
  */
-/**
- *  附着行为
- */
-@property (nonatomic, strong) UIAttachmentBehavior *attachment;
 
 @end
 
