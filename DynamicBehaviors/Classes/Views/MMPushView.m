@@ -18,6 +18,11 @@
      *  当前点
      */
     CGPoint _currenP;
+    
+    /**
+     * 推动行为
+     */
+    UIPushBehavior *_push;
 
 }
 
@@ -41,8 +46,24 @@
         // 赋值
         _imgView = imgView;
         
+        // MARK: - 2.推动行为
+        // 1.创建行为
+        UIPushBehavior *push = [[UIPushBehavior alloc] initWithItems:@[self.boxView] mode:UIPushBehaviorModeContinuous];
         
-        // MARK: - 2.拖拽手势识别器
+        // 2.添加给仿真者
+        [self.animator addBehavior:push];
+        
+        // MAKR: - 2.2 添加边缘检测
+        UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[self.boxView]];
+        
+        collision.translatesReferenceBoundsIntoBoundary = YES;
+        
+        [self.animator addBehavior:collision];
+        
+        // 3.赋值
+        _push = push;
+        
+        // MARK: - 3.拖拽手势识别器
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
         [self addGestureRecognizer:pan];
     }
@@ -76,11 +97,29 @@
         // 2.3 结束
         _imgView.hidden = YES;
         
+        // - 计算角度和力度!
+        // 计算偏移量
+        CGFloat offsetY = _imgView.center.y - _currenP.y;
+        CGFloat offsetX = _imgView.center.x - _currenP.x;
+        
+        // 计算斜边长度 -> 力度
+        // 根据两条直角边 计算斜边长度!
+        CGFloat distance = hypot(offsetX, offsetY);
+        
+        // 计算角度
+        CGFloat angle = atan2(offsetY, offsetX);
+        
+        _push.angle = angle; // 角度
+        _push.magnitude = distance; // 力度
+        _push.active = YES; // 单次推需要打开!
+        
+        
         // - 清除线
         _imgView.center = CGPointZero;
         _currenP = CGPointZero;
         
         [self setNeedsDisplay];
+        
         
     }
 
