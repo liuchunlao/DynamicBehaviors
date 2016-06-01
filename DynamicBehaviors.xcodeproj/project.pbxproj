@@ -14,6 +14,11 @@
 		18072BA01CFE7FEF0061EA10 /* MMListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072B9F1CFE7FEF0061EA10 /* MMListController.m */; };
 		18072BA31CFE889E0061EA10 /* MMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BA21CFE889E0061EA10 /* MMDemoController.m */; };
 		18072BA61CFE8A400061EA10 /* MMBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BA51CFE8A400061EA10 /* MMBaseView.m */; };
+		18072BA91CFE8BC40061EA10 /* MMSnapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BA81CFE8BC40061EA10 /* MMSnapView.m */; };
+		18072BAC1CFE8BD20061EA10 /* MMPushView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BAB1CFE8BD20061EA10 /* MMPushView.m */; };
+		18072BAF1CFE8BDF0061EA10 /* MMAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BAE1CFE8BDF0061EA10 /* MMAttachmentView.m */; };
+		18072BB21CFE8BEC0061EA10 /* MMSpringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BB11CFE8BEC0061EA10 /* MMSpringView.m */; };
+		18072BB51CFE8BF70061EA10 /* MMCollisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BB41CFE8BF70061EA10 /* MMCollisionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,16 @@
 		18072BA21CFE889E0061EA10 /* MMDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDemoController.m; sourceTree = "<group>"; };
 		18072BA41CFE8A400061EA10 /* MMBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBaseView.h; sourceTree = "<group>"; };
 		18072BA51CFE8A400061EA10 /* MMBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBaseView.m; sourceTree = "<group>"; };
+		18072BA71CFE8BC40061EA10 /* MMSnapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSnapView.h; sourceTree = "<group>"; };
+		18072BA81CFE8BC40061EA10 /* MMSnapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSnapView.m; sourceTree = "<group>"; };
+		18072BAA1CFE8BD20061EA10 /* MMPushView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPushView.h; sourceTree = "<group>"; };
+		18072BAB1CFE8BD20061EA10 /* MMPushView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPushView.m; sourceTree = "<group>"; };
+		18072BAD1CFE8BDF0061EA10 /* MMAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAttachmentView.h; sourceTree = "<group>"; };
+		18072BAE1CFE8BDF0061EA10 /* MMAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAttachmentView.m; sourceTree = "<group>"; };
+		18072BB01CFE8BEC0061EA10 /* MMSpringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpringView.h; sourceTree = "<group>"; };
+		18072BB11CFE8BEC0061EA10 /* MMSpringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpringView.m; sourceTree = "<group>"; };
+		18072BB31CFE8BF70061EA10 /* MMCollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCollisionView.h; sourceTree = "<group>"; };
+		18072BB41CFE8BF70061EA10 /* MMCollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCollisionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +137,16 @@
 			children = (
 				18072BA41CFE8A400061EA10 /* MMBaseView.h */,
 				18072BA51CFE8A400061EA10 /* MMBaseView.m */,
+				18072BA71CFE8BC40061EA10 /* MMSnapView.h */,
+				18072BA81CFE8BC40061EA10 /* MMSnapView.m */,
+				18072BAA1CFE8BD20061EA10 /* MMPushView.h */,
+				18072BAB1CFE8BD20061EA10 /* MMPushView.m */,
+				18072BAD1CFE8BDF0061EA10 /* MMAttachmentView.h */,
+				18072BAE1CFE8BDF0061EA10 /* MMAttachmentView.m */,
+				18072BB01CFE8BEC0061EA10 /* MMSpringView.h */,
+				18072BB11CFE8BEC0061EA10 /* MMSpringView.m */,
+				18072BB31CFE8BF70061EA10 /* MMCollisionView.h */,
+				18072BB41CFE8BF70061EA10 /* MMCollisionView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,7 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18072BA91CFE8BC40061EA10 /* MMSnapView.m in Sources */,
+				18072BB21CFE8BEC0061EA10 /* MMSpringView.m in Sources */,
 				18072BA31CFE889E0061EA10 /* MMDemoController.m in Sources */,
+				18072BAC1CFE8BD20061EA10 /* MMPushView.m in Sources */,
+				18072BAF1CFE8BDF0061EA10 /* MMAttachmentView.m in Sources */,
+				18072BB51CFE8BF70061EA10 /* MMCollisionView.m in Sources */,
 				18072BA01CFE7FEF0061EA10 /* MMListController.m in Sources */,
 				18072B811CFE7F6D0061EA10 /* main.m in Sources */,
 				18072B9D1CFE7FCC0061EA10 /* AppDelegate.m in Sources */,
