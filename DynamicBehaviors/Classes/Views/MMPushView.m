@@ -46,15 +46,21 @@
         // 赋值
         _imgView = imgView;
         
+        // MARK: - 1.2 蓝色的小view
+        UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(100, 250, 20, 20)];
+        blueView.backgroundColor = [UIColor blueColor];
+        [self addSubview:blueView];
+        
+        
         // MARK: - 2.推动行为
         // 1.创建行为
-        UIPushBehavior *push = [[UIPushBehavior alloc] initWithItems:@[self.boxView] mode:UIPushBehaviorModeContinuous];
+        UIPushBehavior *push = [[UIPushBehavior alloc] initWithItems:@[self.boxView] mode:UIPushBehaviorModeInstantaneous];
         
         // 2.添加给仿真者
         [self.animator addBehavior:push];
         
         // MAKR: - 2.2 添加边缘检测
-        UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[self.boxView]];
+        UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[self.boxView, blueView]];
         
         collision.translatesReferenceBoundsIntoBoundary = YES;
         
