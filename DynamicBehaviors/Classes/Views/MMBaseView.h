@@ -10,4 +10,14 @@
 
 @interface MMBaseView : UIView
 
+/**
+ *  执行仿真的方块视图
+ */
+@property (nonatomic, weak) UIImageView *boxView;
+
+/**
+ *  仿真者
+ */
+@property (nonatomic, strong) UIDynamicAnimator *animator;
+
 @end

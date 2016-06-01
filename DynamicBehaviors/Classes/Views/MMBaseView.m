@@ -25,6 +25,12 @@
         
         [self addSubview:boxV];
         
+        // 赋值
+        _boxView = boxV;
+        
+        // MARK: - 3.仿真者
+        _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
+        
     }
     return self;
 }
