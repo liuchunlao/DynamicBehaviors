@@ -7,6 +7,7 @@
 //  显示各种不同的的控制器
 
 #import "MMDemoController.h"
+#import "MMBaseView.h"
 
 @interface MMDemoController ()
 
@@ -18,6 +19,10 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor yellowColor];
+    
+    // MARK: - 1.演示baseView
+    MMBaseView *baseView = [[MMBaseView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:baseView];
 }
 
 - (void)didReceiveMemoryWarning {

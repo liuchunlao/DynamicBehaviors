@@ -13,6 +13,7 @@
 		18072B9D1CFE7FCC0061EA10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072B9B1CFE7FCC0061EA10 /* AppDelegate.m */; };
 		18072BA01CFE7FEF0061EA10 /* MMListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072B9F1CFE7FEF0061EA10 /* MMListController.m */; };
 		18072BA31CFE889E0061EA10 /* MMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BA21CFE889E0061EA10 /* MMDemoController.m */; };
+		18072BA61CFE8A400061EA10 /* MMBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18072BA51CFE8A400061EA10 /* MMBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		18072B9F1CFE7FEF0061EA10 /* MMListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMListController.m; sourceTree = "<group>"; };
 		18072BA11CFE889E0061EA10 /* MMDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDemoController.h; sourceTree = "<group>"; };
 		18072BA21CFE889E0061EA10 /* MMDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDemoController.m; sourceTree = "<group>"; };
+		18072BA41CFE8A400061EA10 /* MMBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBaseView.h; sourceTree = "<group>"; };
+		18072BA51CFE8A400061EA10 /* MMBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		18072B9C1CFE7FCC0061EA10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18072BA41CFE8A400061EA10 /* MMBaseView.h */,
+				18072BA51CFE8A400061EA10 /* MMBaseView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				18072BA01CFE7FEF0061EA10 /* MMListController.m in Sources */,
 				18072B811CFE7F6D0061EA10 /* main.m in Sources */,
 				18072B9D1CFE7FCC0061EA10 /* AppDelegate.m in Sources */,
+				18072BA61CFE8A400061EA10 /* MMBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
